@@ -22,11 +22,17 @@ describe('calculator', function () {
     calculator.subtract(4);
     assert.equal(3, calculator.runningTotal);
   })
-  // test multiply function
+  // test the multiply function
   it('multiply 3 by 5 to get 15', function(){
     calculator.previousTotal = 5;
     calculator.multiply(3);
     assert.equal(15, calculator.runningTotal);
+  })
+  // tests the divide function
+  it('divide 21 by 7 to get 3', function(){
+    calculator.previousTotal = 21;
+    calculator.divide(7);
+    assert.equal(3, calculator.runningTotal);
   })
   // it('add 1 to 4 and get 5', function(){
   //   calculator.numberClick(4);
