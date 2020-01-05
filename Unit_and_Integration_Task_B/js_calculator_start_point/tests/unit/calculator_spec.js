@@ -34,6 +34,15 @@ describe('calculator', function () {
     calculator.divide(7);
     assert.equal(3, calculator.runningTotal);
   })
+  // tests if multiple number clicks are concatenated
+  it('1 and 1 and 2 is 112', function(){
+    calculator.numberClick(1);
+    assert.equal(1, calculator.runningTotal);
+    calculator.numberClick(1);
+    assert.equal(11, calculator.runningTotal);
+    calculator.numberClick(2);
+    assert.equal(112, calculator.runningTotal);
+  })
   // it('add 1 to 4 and get 5', function(){
   //   calculator.numberClick(4);
   //   calculator.operatorClick("+");
