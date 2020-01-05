@@ -43,12 +43,13 @@ describe('calculator', function () {
     calculator.numberClick(2);
     assert.equal(112, calculator.runningTotal);
   })
-  // it('add 1 to 4 and get 5', function(){
-  //   calculator.numberClick(4);
-  //   calculator.operatorClick("+");
-  //   calculator.numberClick(1);
-  //   calculator.operatorClick("=");
-  //   assert.deepStrictEqual(calculator.previousTotal, 5);
-  // })
+  // tests if multiple operators can be linked in the same function
+  it('add 1 to 4 and get 5', function(){
+    calculator.numberClick(4);
+    calculator.operatorClick("+");
+    calculator.numberClick(1);
+    calculator.operatorClick("=");
+    assert.deepStrictEqual(calculator.previousTotal, 5);
+  })
 
 });
