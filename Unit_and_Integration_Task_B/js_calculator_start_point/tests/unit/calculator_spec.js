@@ -16,11 +16,17 @@ describe('calculator', function () {
     calculator.add(1);
     assert.equal(5, calculator.runningTotal);
   })
-  // test the su tract function
+  // test the subtract function
   it('subtract 4 from 7 to get 3', function(){
     calculator.previousTotal = 7;
     calculator.subtract(4);
     assert.equal(3, calculator.runningTotal);
+  })
+  // test multiply function
+  it('multiply 3 by 5 to get 15', function(){
+    calculator.previousTotal = 5;
+    calculator.multiply(3);
+    assert.equal(15, calculator.runningTotal);
   })
   // it('add 1 to 4 and get 5', function(){
   //   calculator.numberClick(4);
