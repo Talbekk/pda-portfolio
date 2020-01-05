@@ -49,7 +49,7 @@ describe('calculator', function () {
     calculator.operatorClick("+");
     calculator.numberClick(1);
     calculator.operatorClick("=");
-    assert.deepStrictEqual(calculator.previousTotal, 5);
+    assert.equal(calculator.previousTotal, 5);
   })
   // tests if clear click clears the running total but does not affect the calculation.
   it('subtract 10 from 30 to get 20', function(){
